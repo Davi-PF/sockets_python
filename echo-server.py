@@ -3,7 +3,7 @@ import socket
 server = '127.0.0.1' # localhost - loopback
 port = 12345
 
-with socket.socket(socket.AF_INET, socket.SOC_STREAM) as sock:
+with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
     sock.bind((server, port))
     sock.listen()
     conn, addr = sock.accept()          # Informação do cliente que conectou
