@@ -8,4 +8,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:  # Abre o socket
     sock.sendall(b'Hello, World!')
     data = sock.recv(1024)
 
-print('Recebido ', repr(data))
+print('Recebido: ', repr(data))
